@@ -1,13 +1,15 @@
+/* Change this file to get your personal Porfolio */
+
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
 };
 
-// SEO Related settings
+//SEO Related settings
 const seo = {
   title: "Sohrab Rezaei",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate engineer with a strong foundation in both mechanical and electrical engineering, currently specializing in advanced control systems and data-driven methodologies.",
   og: {
     title: "Sohrab Rezaei",
     type: "website",
@@ -15,66 +17,67 @@ const seo = {
   },
 };
 
-// Home Page
+//Home Page
 const greeting = {
   title: "Sohrab Rezaei",
-  logo_name: "SohrabR",
-  nickname: "layman_brother",
+  logo_name: "Sohrab Rezaei",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+  "A passionate engineer with a strong foundation in both mechanical and electrical engineering, currently specializing in advanced control systems and data-driven methodologies.",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/Sohrab-rz", // Updated
-  githubProfile: "https://github.com/Sohrab-rz", // Updated
+  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  githubProfile: "https://github.com/ashutosh1919",
 };
 
-// Social Media Links
 const socialMediaLinks = [
+  /* Your Social Media Link */
+  // github: "https://github.com/ashutosh1919",
+  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
+  // gmail: "ashutoshhathidara98@gmail.com",
+  // gitlab: "https://gitlab.com/ashutoshhathidara98",
+  // facebook: "https://www.facebook.com/laymanbrother.19/",
+  // twitter: "https://twitter.com/ashutosh_1919",
+  // instagram: "https://www.instagram.com/layman_brother/"
+
   {
     name: "Github",
-    link: "https://github.com/Sohrab-rz", // Updated
+    link: "https://github.com/ashutosh1919",
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/srezaei/", // Updated
+    link: "https://www.linkedin.com/in/ashutosh1919/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/@sohrabization4576", // Updated
+    link: "https://youtube.com/c/DevSense19",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
-    name: "Google Scholar",
-    link: "https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en", // Updated
+    name: "Gmail",
+    link: "mailto:ashutoshhathidara98@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=google
+    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
   {
-    name: "IEEE",
-    link: "https://ieeexplore.ieee.org/author/636354512544223", // Updated
-    fontAwesomeIcon: "fa-IEEE", // Custom icon for IEEE
-    backgroundColor: "#0077B5", // IEEE color
+    name: "X-Twitter",
+    link: "https://twitter.com/ashutosh_1919",
+    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
+    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
   },
   {
-    name: "ORCID",
-    link: "https://orcid.org/0009-0009-3530-1202", // Updated
-    fontAwesomeIcon: "fa-orcid", // Custom icon for ORCID
-    backgroundColor: "#A6CE39", // ORCID color
-  },
-  {
-    name: "ResearchGate",
-    link: "https://www.researchgate.net/profile/Sohrab-Rezaei-7", // Updated
-    fontAwesomeIcon: "fa-researchgate", // Custom icon for ResearchGate
-    backgroundColor: "#00CC99", // ResearchGate color
+    name: "Facebook",
+    link: "https://www.facebook.com/laymanbrother.19/",
+    fontAwesomeIcon: "fa-facebook-f", 
+    backgroundColor: "#1877F2",
   },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/sohrabization/", // Updated
+    link: "",
     fontAwesomeIcon: "fa-instagram", 
     backgroundColor: "#E4405F",
   },
@@ -86,13 +89,13 @@ const skills = {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production-ready models for various deep learning and statistical use cases",
+        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
         "⚡ Experience of working with Computer Vision and NLP projects",
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
         {
-          skillName: "TensorFlow",
+          skillName: "Tensorflow",
           fontAwesomeClassname: "logos-tensorflow",
           style: {
             backgroundColor: "transparent",
@@ -122,7 +125,7 @@ const skills = {
           },
         },
         {
-          skillName: "Deep Learning",
+          skillName: "Deeplearning",
           imageSrc: "deeplearning_ai_logo.png",
         },
       ],
@@ -132,7 +135,7 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native, and solo Android apps using Kotlin",
+        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
         "⚡ Creating application backend in Node, Express & Flask",
       ],
       softwareSkills: [
@@ -318,6 +321,7 @@ const skills = {
     },
   ],
 };
+
 // Education Page
 const competitiveSites = {
   competitiveSites: [
