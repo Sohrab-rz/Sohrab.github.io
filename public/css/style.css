@@ -28,8 +28,9 @@ footer {
   padding: 10px;
 }
 #footerPar{
-  text-align: 110px;
+  text-align: center; /* Center the footer text */
 }
+
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -44,28 +45,29 @@ footer {
   z-index: 1000;
   height: 60px;
 }
+
 /* Navigation links styling */
 .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Navigation link items */
-  .nav-item {
-    font-size: 16px;
-    color: white; /* White text color for the nav items */
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
-  }
-  
-  .nav-item:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light hover background */
-    color: #fff; /* Keep text color white */
-  }
-  
+  display: flex;
+  gap: 20px;
+}
+
+/* Navigation link items */
+.nav-item {
+  font-size: 16px;
+  color: white; /* White text color for the nav items */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Light hover background */
+  color: #fff; /* Keep text color white */
+}
+
 /* Sidebar Styles */
 .sidebar {
   position: fixed;
@@ -153,7 +155,6 @@ footer {
   color: #404040;
 }
 
-
 /* Publications Page Styles */
 .publications-list {
   display: flex;
@@ -191,9 +192,7 @@ footer {
   color: #0325e4;
 }
 
-
 /* General Styles for Projects and Experience Pages */
-
 .project-item, .experience-item {
   background: white;
   border: 1px solid #ddd;
@@ -222,3 +221,38 @@ footer {
   line-height: 1.6;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjust body padding to make room for sidebar */
+  body {
+    padding-left: 0; /* Remove padding-left in mobile */
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar in mobile */
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  /* Main content takes full width in mobile */
+  .main-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  /* Adjust the footer position */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
