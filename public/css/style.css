@@ -97,13 +97,13 @@ footer {
 /* Sidebar Links */
 .sidebar-links {
   width: 100%;
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
 }
 
 .sidebar-item {
-  text-align: center;
+  text-align: left;
   color: white;
   text-decoration: none;
   font-size: 18px;
