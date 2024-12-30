@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+
+<style>
+  .logo-container {
+      position: relative; /* Enables positioning child elements absolutely */
+  }
+
+  .logo {
+      position: absolute; /* Allows precise placement */
+      top: 50%; /* Adjust vertical position */
+      left: 200px; /* Adjust horizontal position to match arrow's direction */
+      transform: translateY(-50%); /* Centers vertically */
+  }
+</style>
+
+
+
+
 <html lang="en" class="h-100">
 <head>
   <meta charset="UTF-8" />
@@ -75,7 +92,7 @@
           <!-- University 1 -->
           <div class="education-item">
               <h2><a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a></h2>
-              <img src="public/img/JHU.png" alt="JHU Logo" style="width: 100px;">
+              <img src="public/img/JHU.png" alt="JHU Logo" class="logo" style="width: 100px;">
               <p><strong>Degree:</strong> Master of Science in Engineering (MSE)</p>
               <p><strong>Years:</strong> 2024 - Present</p>
               <p><strong>Major:</strong> Electrical and Computer Engineering</p>
