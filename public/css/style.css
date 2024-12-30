@@ -1,35 +1,14 @@
 /* General body styles */
 html, body {
-  height: 100%;
   margin: 0;
-  padding-top: 10px;
-}
-
-/* Body layout */
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  color: #404040;
-  background: #F4F4FF;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-left: 250px; /* Offset the content to make space for sidebar */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Footer styling */
-footer {
-  text-align: center;
-  padding-inline: 5px;
-  margin-top: auto;
-  width: 100%;
-  color: white;
-  background-color: #0325e4; /* background for footer */
-  padding: 10px;
-}
-#footerPar{
-  text-align: center; /* Center the footer text */
-}
+
+
 
 /* Navbar styling */
 .navbar {
@@ -184,9 +163,29 @@ footer {
 
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .sidebar {
     left: 0;
+  }
+  body{
+    font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  color: #404040;
+  background: #F4F4FF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 250px;
+  }
+
+  footer {
+    text-align: center;
+    padding-inline: 5px;
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    background-color: #0325e4; /* background for footer */
+    padding: 10px;
   }
 }
 
@@ -214,7 +213,7 @@ footer {
     font-size: 18px;
   }
 
-  .main-content {
+  .body {
     margin-left: 0; 
     width: 100%;
   }
