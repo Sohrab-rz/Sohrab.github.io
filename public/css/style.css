@@ -121,6 +121,7 @@ footer {
 
 /* Main content padding to avoid overlap with sidebar */
 .main-content {
+  transition: margin-left 0.3s ease; 
   padding: 20px;
   width: calc(100% - 270px); /* Adjust to make space for the sidebar */
   margin-left: 270px; /* Ensure content doesn't go under the sidebar */
