@@ -5,11 +5,15 @@ html, body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
-/* Footer styling */
-
-
-
+footer {
+  text-align: center;
+  padding-inline: 5px;
+  margin-top: auto;
+  width: 100%;
+  color: white;
+  background-color: #0325e4; /* background for footer */
+  padding: 10px;
+}
 /* Navbar styling */
 .navbar {
   display: flex;
@@ -37,7 +41,7 @@ html, body {
   color: white; /* White text color for the nav items */
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 8px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
 }
@@ -53,7 +57,7 @@ html, body {
   top: 60px; /* Align sidebar below the navbar */
   left: 0;
   width: 250px;
-  height: calc(100% - 60px); /* Take up full height minus navbar height */
+  height: 100%; /* Take up full height minus navbar height */
   background-color: #0325e4;
   color: white;
   padding-top: 20px;
@@ -102,17 +106,14 @@ html, body {
 .main-content {
   transition: margin-left 0.3s ease; 
   padding: 20px;
-  width: calc(100% - 270px); /* Adjust to make space for the sidebar */
+  width: calc(100% - 20px); /* Adjust to make space for the sidebar */
   margin-left: 0px; /* Ensure content doesn't go under the sidebar */
 }
 
-/* Education Page Styles */
-
-
 /* Publications Page Styles */
-.publications-list, .education-list  {
+.publications-list, .education-list, .project-list, .experience-list  {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   gap: 20px;
 }
 
@@ -163,12 +164,12 @@ html, body {
 
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
-@media (min-width: 760px) {
+@media (min-width: 768px) {
   .sidebar {
     left: 0;
   }
   body{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: normal;
   color: #404040;
   background: #F4F4FF;
@@ -178,15 +179,7 @@ html, body {
   padding-left: 250px;
   }
 
-  footer {
-    text-align: center;
-    padding-inline: 5px;
-    margin-top: auto;
-    width: 100%;
-    color: white;
-    background-color: #0325e4; /* background for footer */
-    padding: 10px;
-  }
+  
 }
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
@@ -227,6 +220,8 @@ html, body {
 
   .nav-links.show {
     display: flex; 
+    
   }
+ 
 }
 
