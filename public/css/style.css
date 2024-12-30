@@ -191,30 +191,42 @@ footer {
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
 @media (max-width: 768px) {
-  
-  /* Sidebar hidden by default in small screens */
   .sidebar {
-    left: -250px;  /* Initially hide sidebar */
+    left: -250px; 
   }
 
   .sidebar.show {
-    left: 0;  /* Show sidebar when toggled */
+    left: 0; 
   }
-
- 
-  /* set nav linkes to right*/ 
-  .nav-links {
-    display: flex;
-    size-adjust: auto;
-    align-items: flex-end; 
-    box-sizing:border-box;
-  }
-
 
   .navbar-toggler {
     display: block;
     position: absolute;
     top: 10px;
-    left: 10px; 
+    left: 10px;
+    z-index: 1001;
+    background-color: #0325e4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .main-content {
+    margin-left: 0; 
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    gap: 10px;
+    align-items: flex-start;
+    display: none; 
+  }
+
+  .nav-links.show {
+    display: flex; 
   }
 }
+
