@@ -83,6 +83,7 @@ footer {
   align-items: center;
   z-index: 500;
   overflow-y: auto; /* Allow scrolling if sidebar content overflows */
+  transition: left 0.3s ease; /* Smooth transition when showing/hiding */
 }
 
 /* Profile Picture */
@@ -221,38 +222,47 @@ footer {
   line-height: 1.6;
 }
 
-/* Mobile responsiveness */
+
+/* For larger screens (e.g., desktops), the sidebar is always visible */
+@media (min-width: 768px) {
+  .sidebar {
+    left: 0;
+  }
+}
+
+/* For smaller screens (e.g., mobile), the sidebar is hidden by default */
 @media (max-width: 768px) {
-  /* Adjust body padding to make room for sidebar */
-  body {
-    padding-left: 0; /* Remove padding-left in mobile */
+  
+  /* Sidebar hidden by default in small screens */
+  .sidebar {
+    left: -250px;  /* Initially hide sidebar */
   }
 
-  .sidebar {
-    display: none; /* Hide sidebar in mobile */
+  .sidebar.show {
+    left: 0;  /* Show sidebar when toggled */
   }
 
   .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-  }
-
-  /* Main content takes full width in mobile */
-  .main-content {
+    position: fixed;
+    right: 0; /* تغییر موقعیت navbar به سمت راست */
+    top: 0;
     width: 100%;
-    margin-left: 0;
+    z-index: 1000;
   }
 
+  /* تنظیم navbar links برای نمایش در سمت راست */
+  .nav-links {
+    display: flex;
+    size-adjust: auto;
+    align-items: flex-end; /* قرار دادن آیتم‌های nav به سمت راست */
+    box-sizing:border-box;
+  }
+
+  /* برای دکمه سه خط */
   .navbar-toggler {
     display: block;
-  }
-
-  /* Adjust the footer position */
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* موقعیت دکمه سه خط */
   }
 }

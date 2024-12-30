@@ -9,67 +9,61 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Nabar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <!-- Navigation Links -->
-      <div class="nav-links">
-        <a href="index.html" class="nav-item">Home</a>
-        <a href="education.html" class="nav-item">Education</a>
-        <a href="experience.html" class="nav-item">Experience</a>
-        <a href="projects.html" class="nav-item">Projects</a>
-        <a href="publications.html" class="nav-item">Publications</a>
-        <a href="https://livejohnshopkins-my.sharepoint.com/:b:/g/personal/arezaei2_jh_edu/EeEnlwg5jsdNhxEeny9gVK0B0QO7dSUi965L3r2a6pAtQQ?e=OStfaz" 
-      target="_blank" rel="noopener noreferrer" class="nav-item nav-link">CV</a>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar-container">
+    <!-- Navigation Links -->
+    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-links">
+      
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="education.html" class="nav-item">Education</a>
+      <a href="experience.html" class="nav-item">Experience</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="publications.html" class="nav-item">Publications</a>
+      <a href="https://livejohnshopkins-my.sharepoint.com/:b:/g/personal/arezaei2_jh_edu/EeEnlwg5jsdNhxEeny9gVK0B0QO7dSUi965L3r2a6pAtQQ?e=OStfaz" target="_blank" rel="noopener noreferrer" class="nav-item nav-link">CV</a>
     </div>
-  </nav>
-
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <!-- Profile Picture -->
-    <div class="sidebar-profile">
-      <img src="public/img/profile.jpg" alt="Profile Picture" class="profile-pic">
-    </div>
-  
-
-      <!-- Links in Sidebar -->
-      <div class="sidebar-links">
-        <a href="https://www.linkedin.com/in/srezaei/" class="sidebar-item" target="_blank">
-          <i class="fab fa-linkedin"></i> Linkedin
-        </a>
-        <a href="https://github.com/Sohrab-rz" class="sidebar-item" target="_blank">
-          <i class="fab fa-github"></i> Github
-        </a>
-        <a href="https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en" class="sidebar-item" target="_blank">
-          <i class="fas fa-user-graduate"></i> Google Scholar
-        </a>
-        <a href="https://ieeexplore.ieee.org/author/636354512544223" class="sidebar-item" target="_blank">
-          <img src="public/img/ieee.png" 
-              alt="IEEE Logo" 
-              style="width: 20px; height: 20px; vertical-align: middle; filter: invert(1);">
-          IEEE
-        </a>
-          <a href="https://www.youtube.com/@sohrabization4576" class="sidebar-item" target="_blank">
-            <i class="fab fa-youtube"></i> YouTube
-          </a>
-          <a href="https://orcid.org/0009-0009-3530-1202" class="sidebar-item" target="_blank">
-            <i class="fas fa-id-card"></i> Orcid
-          </a>
-          <a href="https://www.researchgate.net/profile/Sohrab-Rezaei-7" class="sidebar-item" target="_blank">
-            <i class="fab fa-researchgate"></i> ResearchGate
-          </a>
-          <a href="mailto:arezaei2@jhu.edu" class="sidebar-item" target="_blank">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-          <a href="https://www.instagram.com/sohrabization/" class="sidebar-item" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-      </div>
-    </div>
+  </div>
+</nav>
 
 
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-profile">
+    <img src="public/img/profile.jpg" alt="Profile Picture" class="profile-pic">
+  </div>
+  <div class="sidebar-links">
+    <a href="https://www.youtube.com/@sohrabization4576" class="sidebar-item" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="mailto:gozo.com" class="sidebar-item" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/srezaei/" class="sidebar-item" target="_blank">
+      <i class="fab fa-linkedin"></i> Linkedin
+    </a>
+    <a href="https://github.com/Sohrab-rz" class="sidebar-item" target="_blank">
+      <i class="fab fa-github"></i> Github
+    </a>
+    <a href="https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en" class="sidebar-item" target="_blank">
+      <i class="fas fa-user-graduate"></i> Google Scholar
+    </a>
+    <a href="https://ieeexplore.ieee.org/author/636354512544223" class="sidebar-item" target="_blank">
+      <img src="public/img/ieee.png" alt="IEEE Logo" style="width: 20px; height: 20px; vertical-align: middle; filter: invert(1);"> IEEE
+    </a>
+    <a href="https://www.instagram.com/sohrabization/" class="sidebar-item" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://orcid.org/0009-0009-3530-1202" class="sidebar-item" target="_blank">
+      <i class="fas fa-id-card"></i> Orcid
+    </a>
+    <a href="https://www.researchgate.net/profile/Sohrab-Rezaei-7" class="sidebar-item" target="_blank">
+      <i class="fab fa-researchgate"></i> ResearchGate
+    </a>
+  </div>
+</div>
 
   <div class="container mt-5"> <!-- main part inside this div -->
     <div class="row">
@@ -90,6 +84,27 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+  function toggleSidebar() {
+      var sidebar = document.querySelector(".sidebar");
+      var mainContent = document.querySelector(".main-content");
+      var footer = document.querySelector("footer");
+
+      sidebar.classList.toggle("show");
+      sidebar.classList.toggle("hide");
+
+      if (sidebar.classList.contains("show")) {
+        mainContent.style.marginLeft = "270px"; // Push main content aside when sidebar is open
+        footer.style.width = "calc(100% - 250px)"; // Adjust footer width to take full width when sidebar is open
+      } else {
+        mainContent.style.marginLeft = "0"; // Reset content position when sidebar is closed
+        footer.style.width = "100%"; // Reset footer width to 100% when sidebar is closed
+      }
+}
+
+
+
+  </script>
 </body>
 </html>
 
