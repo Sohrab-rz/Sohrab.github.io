@@ -127,43 +127,16 @@ footer {
 }
 
 /* Education Page Styles */
-.education-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.education-item {
-  background: white;
-  border: 1px solid #ddd; /* Subtle border for separation */
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-}
-
-.education-item h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #0325e4;
-}
-
-.education-item p {
-  margin: 5px 0;
-  line-height: 1.6;
-}
-
-.education-item strong {
-  color: #404040;
-}
 
 /* Publications Page Styles */
-.publications-list {
+.publications-list, .education-list  {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.publication-item {
+.publication-item, .education-item, .project-item, .experience-item  {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -171,12 +144,17 @@ footer {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.publication-item p {
+.publication-item p ,.education-item p, .project-item p, .experience-item p  {
   margin: 5px 0;
   line-height: 1.6;
 }
+.publication-item h2, .education-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #0325e4;
+}
 
-.publication-item strong {
+.publication-item strong , .education-item strong{
   color: #404040;
 }
 
@@ -189,23 +167,8 @@ footer {
   transition: color 0.3s;
 }
 
-.publication-link:hover {
+.publication-link:hover , .education-item-link:hover{
   color: #0325e4;
-}
-
-/* General Styles for Projects and Experience Pages */
-.project-item, .experience-item {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-item p, .experience-item p {
-  margin: 5px 0;
-  line-height: 1.6;
 }
 
 .section-content {
@@ -217,10 +180,6 @@ footer {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-content p {
-  margin: 5px 0;
-  line-height: 1.6;
-}
 
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
@@ -242,14 +201,7 @@ footer {
     left: 0;  /* Show sidebar when toggled */
   }
 
-  .navbar {
-    position: fixed;
-    right: 0; /* تغییر موقعیت navbar به سمت راست */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-
+ 
   /* set nav linkes to right*/ 
   .nav-links {
     display: flex;
@@ -258,11 +210,11 @@ footer {
     box-sizing:border-box;
   }
 
-  /* برای دکمه سه خط */
+
   .navbar-toggler {
     display: block;
     position: absolute;
     top: 10px;
-    left: 10px; /* موقعیت دکمه سه خط */
+    left: 10px; 
   }
 }
