@@ -242,7 +242,7 @@ footer {
 .togler { display: block; /* Show the button */ }
   .navbar-brand {
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
   .sidebar {
     left: -250px; 
