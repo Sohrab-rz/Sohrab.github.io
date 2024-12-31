@@ -128,7 +128,9 @@ footer {
 .publication-item p ,.education-item p, .project-item p, .experience-item p  {
   margin: 5px 0;
   line-height: 1.6;
+  text-align: justify; /* Justify text */
 }
+
 .publication-item h2, .education-item h2 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -184,6 +186,14 @@ footer {
 .dropdown-content {
   text-align: center;
   color: black;
+}
+
+.dropdown-content .nav-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #cbd0f1;
 }
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
