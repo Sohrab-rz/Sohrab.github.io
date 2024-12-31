@@ -199,6 +199,7 @@ footer {
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
 @media (min-width: 768px) {
+  .togler { display: none; /* Hide the button */ }
   .navbar-brand {
     text-align: left;
     display: flex;
@@ -224,6 +225,21 @@ footer {
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
 @media (max-width: 768px) {
+  /* Navigation link items */
+#nav-menu {
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  background-color: #0325e4; /* Same background color as navbar */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+#nav-menu:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light gray shadow under the item */
+  background-color: #0325e4; /* Keep background same as navbar */
+  color: white; /* Keep text color white */
+}
+.togler { display: block; /* Show the button */ }
   .navbar-brand {
     text-align: center;
     width: 100%;
