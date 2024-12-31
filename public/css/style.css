@@ -162,28 +162,61 @@ footer {
 }
 
 
+.navbar-brand {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Fullscreen dropdown styles */
+.dropdown {
+  position: fixed;
+  top: 60px; /* Position below the navbar */
+  left: 0;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.9); /* Light gray background */
+  color: black;
+  display: none; /* Initially hidden */
+  z-index: 1001;
+  padding: 20px;
+}
+
+.dropdown-content {
+  text-align: center;
+  color: black;
+}
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
 @media (min-width: 768px) {
+  .navbar-brand {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .nav-links {
+    display: flex;
+  }
   .sidebar {
     left: 0;
   }
-  body{
-  font-family: 'Lato', sans-serif;
-  font-weight: normal;
-  color: #404040;
-  background: #F4F4FF;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding-left: 250px;
+  body {
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    color: #404040;
+    background: #F4F4FF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-left: 250px;
   }
-
-  
 }
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
 @media (max-width: 768px) {
+  .navbar-brand {
+    text-align: center;
+    width: 100%;
+  }
   .sidebar {
     left: -250px; 
   }
@@ -212,16 +245,10 @@ footer {
   }
 
   .nav-links {
-    flex-direction: column; 
-    gap: 10px;
-    align-items: flex-start;
     display: none; 
   }
 
   .nav-links.show {
     display: flex; 
-    
   }
- 
 }
-
