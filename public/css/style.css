@@ -225,6 +225,7 @@ footer {
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
 @media (max-width: 768px) {
+  #Namee { padding-left: 10px !important;; /* Adjust the padding to move the name 10px to the left */ }
   /* Navigation link items */
 #nav-menu {
   border: 0px;
@@ -242,7 +243,7 @@ footer {
 .togler { display: block; /* Show the button */ }
   .navbar-brand {
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
   .sidebar {
     left: -250px; 
