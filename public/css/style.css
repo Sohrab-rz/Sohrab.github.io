@@ -198,7 +198,7 @@ footer {
 }
 
 /* For larger screens (e.g., desktops), the sidebar is always visible */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
   .togler { display: none; /* Hide the button */ }
   .navbar-brand {
     text-align: left;
@@ -224,7 +224,7 @@ footer {
 }
 
 /* For smaller screens (e.g., mobile), the sidebar is hidden by default */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #Namee { padding-left: 10px !important;; /* Adjust the padding to move the name 10px to the left */ }
   /* Navigation link items */
 #nav-menu {

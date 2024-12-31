@@ -146,7 +146,7 @@ function toggleSidebar() {
 function toggleDropdown() {
   var dropdown = document.getElementById('dropdown');
   var windowWidth = window.innerWidth;
-  if (windowWidth <= 768) { // Only activate dropdown for small screens
+  if (windowWidth <= 1000) { // Only activate dropdown for small screens
     if (dropdown.style.display === 'block') {
       dropdown.style.display = 'none';
     } else {
