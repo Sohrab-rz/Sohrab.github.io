@@ -168,6 +168,7 @@ footer {
   font-size: 20px;
   color: white;
   cursor: pointer;
+  font-family: 'Great Vibes', cursive; /* Stylish font */
 }
 
 /* Fullscreen dropdown styles */
