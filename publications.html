@@ -33,6 +33,7 @@
     </div>
   </div>
 </nav>
+<<<<<<< HEAD
     
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar">
@@ -65,40 +66,69 @@
           <i class="fab fa-researchgate"></i> ResearchGate
         </a>
       </div>
+=======
+
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-profile">
+    <img src="public/img/profile.jpg" alt="Profile Picture" class="profile-pic">
+  </div>
+  <div class="sidebar-links">
+    <a href="https://www.youtube.com/@sohrabization4576" class="sidebar-item" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="mailto:gozo.com" class="sidebar-item" target="_blank">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/srezaei/" class="sidebar-item" target="_blank">
+      <i class="fab fa-linkedin"></i> Linkedin
+    </a>
+    <a href="https://github.com/Sohrab-rz" class="sidebar-item" target="_blank">
+      <i class="fab fa-github"></i> Github
+    </a>
+    <a href="https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en" class="sidebar-item" target="_blank">
+      <i class="fas fa-user-graduate"></i> Google Scholar
+    </a>
+    <a href="https://ieeexplore.ieee.org/author/636354512544223" class="sidebar-item" target="_blank">
+      <img src="public/img/ieee.png" alt="IEEE Logo" style="width: 20px; height: 20px; vertical-align: middle; filter: invert(1);"> IEEE
+    </a>
+    <a href="https://www.instagram.com/sohrabization/" class="sidebar-item" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://orcid.org/0009-0009-3530-1202" class="sidebar-item" target="_blank">
+      <i class="fas fa-id-card"></i> Orcid
+    </a>
+    <a href="https://www.researchgate.net/profile/Sohrab-Rezaei-7" class="sidebar-item" target="_blank">
+      <i class="fab fa-researchgate"></i> ResearchGate
+    </a>
+  </div>
+</div>
+<div class="container mt-5 main-content">
+  <h1>My Publications</h1>
+  <div class="publications-list">
+    <!-- Publication 1 -->
+    <div class="publication-item">
+      <h2>Title: Title</h2>
+      <p><strong>Authors:</strong> Sohrab Rezaei</p>
+      <p><strong>Publication:</strong> Ozonja</p>
+      <p><strong>Year:</strong> 200000</p>
+      <p><strong>Description:</strong> </p>
+      <a href="#" class="publication-link" target="_blank">Read More</a>
+>>>>>>> 22d152dd (ds)
     </div>
-    
-
-
-
-      <div class="container mt-5 main-content">
-        <h1>My Publications</h1>
-        <div class="publications-list">
-              <!-- Publication 1 -->
-               <div class="publication-item">
-                  <h2>Title: Title</h2>
-                  <p><strong>Authors:</strong> Sohrab Rezaei</p>
-                  <p><strong>Publication:</strong> Ozonja</p>
-                  <p><strong>Year:</strong> 200000</p>
-                  <p><strong>Description:</strong> </p>
-                  <a href="#" class="publication-link" target="_blank">Read More</a>
-              </div>
-              <!-- Publication 2 -->
-              <div class="publication-item">
-                  <h2>Title: Title</h2>
-                  <p><strong>Authors:</strong> Sohrab Rezaei</p>
-                  <p><strong>Publication:</strong> Ozonja</p>
-                  <p><strong>Year:</strong> 200000</p>
-                  <p><strong>Description:</strong> </p>
-                  <a href="#" class="publication-link" target="_blank">Read More</a>
-              </div>
-        </div>
-      </div>
-      
-       
+    <!-- Publication 2 -->
+    <div class="publication-item">
+      <h2>Title: Title</h2>
+      <p><strong>Authors:</strong> Sohrab Rezaei</p>
+      <p><strong>Publication:</strong> Ozonja</p>
+      <p><strong>Year:</strong> 200000</p>
+      <p><strong>Description:</strong> </p>
+      <a href="#" class="publication-link" target="_blank">Read More</a>
     </div>
-
-    
-<!-- Fullscreen Dropdown -->
+  </div>
+</div>
+  
 <div id="dropdown" class="dropdown">
   <div class="dropdown-content">
     <!-- Navigation Links for Dropdown -->
@@ -115,11 +145,7 @@
   <p id="footerPar">&copy; Sohrab Rezaei</p>
 </footer>
 
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"
-></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script>
 function toggleSidebar() {
   var sidebar = document.querySelector(".sidebar");
@@ -137,7 +163,6 @@ function toggleSidebar() {
   }
 }
 
-
 function toggleDropdown() {
   var dropdown = document.getElementById('dropdown');
   var windowWidth = window.innerWidth;
@@ -150,8 +175,33 @@ function toggleDropdown() {
   }
 }
 
+document.addEventListener('click', function(event) {
+  var isClickInsideDropdown = document.getElementById('dropdown').contains(event.target);
+  var isClickInsideMenuButton = document.getElementById('nav-menu').contains(event.target);
 
+  if (!isClickInsideDropdown && !isClickInsideMenuButton) {
+    document.getElementById('dropdown').style.display = 'none';
+  }
+}, true);
+
+document.addEventListener('click', function(event) {
+  var sidebar = document.querySelector(".sidebar");
+  var isClickInsideSidebar = sidebar.contains(event.target);
+
+  var dropdown = document.getElementById('dropdown');
+  var isClickInsideDropdown = dropdown.contains(event.target);
+
+  var isClickInsideMenuButton = document.getElementById('nav-menu').contains(event.target);
+
+  if (!isClickInsideSidebar && sidebar.classList.contains("show")) {
+    sidebar.classList.remove("show");
+  }
+
+  if (!isClickInsideDropdown && !isClickInsideMenuButton) {
+    dropdown.style.display = 'none';
+  }
+}, true);
 </script>
-    </body>
-    </html>
-    
+</body>
+</html>
+
