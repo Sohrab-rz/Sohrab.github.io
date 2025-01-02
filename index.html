@@ -114,15 +114,14 @@ function toggleSidebar() {
   var sidebar = document.querySelector(".sidebar");
   var mainContent = document.querySelector(".main-content");
   var footer = document.querySelector("footer");
-
   sidebar.classList.toggle("show");
 
   if (sidebar.classList.contains("show")) {
     mainContent.style.marginLeft = "270px"; // Push main content aside when sidebar is open
-    
+    footer.style.width = "calc(100% - 250px)"; // Adjust footer width to take full width when sidebar is open
   } else {
     mainContent.style.marginLeft = "0"; // Reset content position when sidebar is closed
-    
+    footer.style.width = "100%"; // Reset footer width to 100% when sidebar is closed
   }
 }
 
