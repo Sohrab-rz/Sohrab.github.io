@@ -75,36 +75,154 @@
 
     <div class="contact-container">
       <h1>Contact Me</h1>
-      <div class="sidebar-links">
-        <a href="https://www.youtube.com/@sohrabization4576" class="sidebar-item" target="_blank">
-          <i class="fab fa-youtube" style="color: #FF0000;"></i> YouTube
-        </a>
-        <a href="mailto:gozo.com" class="sidebar-item" target="_blank">
-          <i class="fas fa-envelope" style="color: #0078D7;"></i> Email
-        </a>
-        <a href="https://www.linkedin.com/in/srezaei/" class="sidebar-item" target="_blank">
-          <i class="fab fa-linkedin" style="color: #0077B5;"></i> LinkedIn
-        </a>
-        <a href="https://github.com/Sohrab-rz" class="sidebar-item" target="_blank">
-          <i class="fab fa-github" style="color: #333;"></i> GitHub
-        </a>
-        <a href="https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en" class="sidebar-item" target="_blank">
-          <i class="fas fa-user-graduate" style="color: #4285F4;"></i> Google Scholar
-        </a>
-        <a href="https://ieeexplore.ieee.org/author/636354512544223" class="sidebar-item" target="_blank">
-          <img src="public/img/ieee.png" alt="IEEE Logo" style="width: 24px; height: 24px; vertical-align: middle;"> IEEE
-        </a>
-        <a href="https://orcid.org/0009-0009-3530-1202" class="sidebar-item" target="_blank">
-          <i class="fas fa-id-card" style="color: #A6CE39;"></i> ORCID
-        </a>
-        <a href="https://www.researchgate.net/profile/Sohrab-Rezaei-7" class="sidebar-item" target="_blank">
-          <i class="fab fa-researchgate" style="color: #00CCBB;"></i> ResearchGate
-        </a>
-        <a href="https://www.instagram.com/sohrabization/" class="sidebar-item" target="_blank">
-          <i class="fab fa-instagram" style="color: #E1306C;"></i> Instagram
-        </a>
+      <p>If you'd like to connect, feel free to reach out through any of the platforms below. I'm always happy to collaborate, discuss ideas, or answer questions!</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <a href="https://www.youtube.com/@sohrabization4576" target="_blank">
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+            <p>Watch my videos on various topics.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:gozo.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <p>Reach me directly via email.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/srezaei/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+            <p>Connect with me professionally.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://github.com/Sohrab-rz" target="_blank">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+            <p>Explore my projects and code.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://scholar.google.com/citations?user=sU7g1VQAAAAJ&hl=en" target="_blank">
+            <i class="fas fa-user-graduate"></i>
+            <span>Google Scholar</span>
+            <p>View my research contributions.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://ieeexplore.ieee.org/author/636354512544223" target="_blank">
+            <img src="public/img/ieee.png" alt="IEEE Logo">
+            <span>IEEE</span>
+            <p>Check out my IEEE publications.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://orcid.org/0009-0009-3530-1202" target="_blank">
+            <i class="fas fa-id-card"></i>
+            <span>ORCID</span>
+            <p>Find my unique researcher ID.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.researchgate.net/profile/Sohrab-Rezaei-7" target="_blank">
+            <i class="fab fa-researchgate"></i>
+            <span>ResearchGate</span>
+            <p>Join me in scientific discussions.</p>
+          </a>
+        </div>
+        <div class="contact-item">
+          <a href="https://www.instagram.com/sohrabization/" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+            <p>Follow me for updates and fun.</p>
+          </a>
+        </div>
       </div>
     </div>
+    
+    <style>
+      .contact-container {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    
+      .contact-container h1 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #333;
+      }
+    
+      .contact-container p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+    
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-content: center;
+      }
+    
+      .contact-item {
+        text-align: center;
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .contact-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+    
+      .contact-item a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+      }
+    
+      .contact-item i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+    
+      .contact-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+      }
+    
+      .contact-item span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #0077b5; /* Default LinkedIn blue, change per brand */
+      }
+    
+      .contact-item p {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 5px 0 0;
+      }
+    
+      /* Icon colors for branding */
+      .contact-item:nth-child(1) i { color: #FF0000; } /* YouTube */
+      .contact-item:nth-child(2) i { color: #0078D7; } /* Email */
+      .contact-item:nth-child(3) i { color: #0077B5; } /* LinkedIn */
+      .contact-item:nth-child(4) i { color: #333; }    /* GitHub */
+      .contact-item:nth-child(5) i { color: #4285F4; } /* Google Scholar */
+      .contact-item:nth-child(9) i { color: #E1306C; } /* Instagram */
+    </style>
 
 
     <!--Main part end -->
