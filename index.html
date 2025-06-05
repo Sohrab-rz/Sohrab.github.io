@@ -3,43 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <title> Sohrab Rezaei</title>
+  <title>Sohrab Rezaei</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="public/css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Added Lato and Merriweather for a more professional look -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg">
-  <div class="navbar-brand" id="Namee" style="left: 0px; padding-left: 50px; position: fixed; top: 10px; font-size:xx-large;">
-    <p>Sohrab Rezaei</p></div>
-  <div class="navbar-container">
-    
-    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleSidebar()" style="color: white; ">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="Namee">Sohrab Rezaei</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <button class="togler" type="button" id="nav-menu" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleDropdown()" style="right: 10px; padding-right: 0px; position: fixed; top: 20px;">
-      <span class="sidebar-toggler" >Menu</span>
-    </button>
-    <div class="nav-links">
-      <!-- Your existing nav items -->
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="experience.html" class="nav-item">Research</a>
-    <a href="projects.html" class="nav-item">Teaching</a>
-    <a href="publications.html" class="nav-item">Contact</a>
-    <a href="https://livejohnshopkins-my.sharepoint.com/:b:/g/personal/arezaei2_jh_edu/EZk3GGCHl21GjOz2yP23evYByw3IZCEQbXDLO0MxPlZCoQ?e=ilAlXo" target="_blank" rel="noopener noreferrer" class="nav-item nav-link">Resume</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="experience.html">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Teaching</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="publications.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://livejohnshopkins-my.sharepoint.com/:b:/g/personal/arezaei2_jh_edu/EZk3GGCHl21GjOz2yP23evYByw3IZCEQbXDLO0MxPlZCoQ?e=ilAlXo" target="_blank" rel="noopener noreferrer">Resume</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
 
-
-
 <!-- Sidebar -->
 <div id="sidebar" class="sidebar">
   <div class="sidebar-profile">
-    <img src="public/img/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <!-- Updated img tag with onerror for a fallback placeholder image -->
+    <img src="public/img/profile.jpg" alt="Profile Picture" class="profile-pic" onerror="this.onerror=null; this.src='https://placehold.co/120x120/cccccc/333333?text=Profile';">
   </div>
   <div class="sidebar-links">
     <a href="https://www.youtube.com/@sohrabization4576" class="sidebar-item" target="_blank">
@@ -58,7 +64,7 @@
       <i class="fas fa-user-graduate"></i> Google Scholar
     </a>
     <a href="https://ieeexplore.ieee.org/author/636354512544223" class="sidebar-item" target="_blank">
-      <img src="public/img/ieee.png" alt="IEEE Logo" style="width: 20px; height: 20px; vertical-align: middle; filter: invert(1);"> IEEE
+      <img src="public/img/ieee.png" alt="IEEE Logo"> IEEE
     </a>
     <a href="https://orcid.org/0009-0009-3530-1202" class="sidebar-item" target="_blank">
       <i class="fas fa-id-card"></i> Orcid
@@ -69,140 +75,142 @@
   </div>
 </div>
 
-  <!-- main part begin -->
-  <div class="container mt-5 main-content">
-    <div class="row">
-        <!-- Main Content -->
-        <div class="col-lg-12">
-            <!-- Bio Section -->
-            <div class="project-item">
-                <h2>Bio</h2>
-                <p>
-                    I am a researcher and engineer specializing in control systems, with expertise in control theory, 
-                    data-driven methodologies, and dynamic systems. Currently pursuing a Master of Science in Engineering 
-                    at Johns Hopkins University, I am deeply committed to addressing the challenges associated with 
-                    complex systems.
-                </p>
-                <p>
-                    Under the supervision of Prof. 
-                    <a href="https://mallada.ece.jhu.edu" target="_blank" rel="noopener noreferrer">Enrique Mallada</a>, 
-                    my research focuses on non-parametric control (NPC) methods to develop efficient, resilient systems 
-                    for real-time applications.
-                </p>
-</div>
-            <!-- Research Interests Section -->
-            <div class="project-item">
-
-                <h2>Research Interests</h2>
-                <ul>
-                    <li>Data-Driven Control Systems</li>
-                    <li>AI in Control Systems</li>
-                    <li>Optimization Algorithms</li>
-                </ul>
-</div>
-            <!-- Education Section -->
-            <div class="project-item">
-                <h2>Education</h2>
-                <ul>
-                    <li>
-                        <strong>M.S.E in Electrical and Computer Engineering</strong><br>
-                        Johns Hopkins University (Expected Graduation: Summer 2025)
-                    </li>
-                    <li>
-                        <strong>M.Sc. in Electrical Engineering - Control</strong><br>
-                        K. N. Toosi University of Technology (Ranked 3rd in class of 40, GPA: 18.99/20, 2023)
-                    </li>
-                    <li>
-                        <strong>B.Sc. in Electrical Engineering</strong><br>
-                        Babol N Noshirvani University of Technology (Ranked 3rd in class of 139, GPA: 18.49/20, 2021)
-                    </li>
-                    <li>
-                        <strong>B.Sc. in Mechanical Engineering</strong><br>
-                        Babol N Noshirvani University of Technology (Ranked 2nd in class of 124, GPA: 18.64/20, 2020)
-                    </li>
-                </ul>
-        </div>
-        </div>
+<!-- main part begin -->
+<div class="container mt-5 main-content">
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- Bio Section -->
+      <section class="section-block mb-4">
+        <h2>Bio</h2>
+        <p>
+          I am a researcher and engineer specializing in control systems, with expertise in control theory,
+          data-driven methodologies, and dynamic systems. Currently pursuing a Master of Science in Engineering
+          at Johns Hopkins University, I am deeply committed to addressing the challenges associated with
+          complex systems.
+        </p>
+        <p>
+          Under the supervision of Prof.
+          <a href="https://mallada.ece.jhu.edu" target="_blank" rel="noopener noreferrer">Enrique Mallada</a>,
+          my research focuses on non-parametric control (NPC) methods to develop efficient, resilient systems
+          for real-time applications.
+        </p>
+      </section>
+      <!-- Research Interests Section -->
+      <section class="section-block mb-4">
+        <h2>Research Interests</h2>
+        <ul>
+          <li>Data-Driven Control Systems</li>
+          <li>AI in Control Systems</li>
+          <li>Optimization Algorithms</li>
+        </ul>
+      </section>
+      <!-- Education Section -->
+      <section class="section-block mb-4">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <strong>M.S.E in Electrical and Computer Engineering</strong><br>
+            Johns Hopkins University (Expected Graduation: Summer 2025)
+          </li>
+          <li>
+            <strong>M.Sc. in Electrical Engineering - Control</strong><br>
+            K. N. Toosi University of Technology (Ranked 3rd in class of 40, GPA: 18.99/20, 2023)
+          </li>
+          <li>
+            <strong>B.Sc. in Electrical Engineering</strong><br>
+            Babol N Noshirvani University of Technology (Ranked 3rd in class of 139, GPA: 18.49/20, 2021)
+          </li>
+          <li>
+            <strong>B.Sc. in Mechanical Engineering</strong><br>
+            Babol N Noshirvani University of Technology (Ranked 2nd in class of 124, GPA: 18.64/20, 2020)
+          </li>
+        </ul>
+      </section>
     </div>
-</div>
-
-
-
-
-    <!-- main part ends -->
-<!-- Fullscreen Dropdown -->
-<div id="dropdown" class="dropdown">
-  <div class="dropdown-content">
-    <!-- Navigation Links for Dropdown -->
-    <a href="index.html" class="nav-item">Home</a>
-    <a href="experience.html" class="nav-item">Research</a>
-    <a href="projects.html" class="nav-item">Teaching</a>
-    <a href="publications.html" class="nav-item">Contact</a>
-    <a href="https://livejohnshopkins-my.sharepoint.com/:b:/g/personal/arezaei2_jh_edu/EeEnlwg5jsdNhxEeny9gVK0BjHUJLxpsrVUwTPjii0LjIg?e=oQ767S" target="_blank" rel="noopener noreferrer" class="nav-item nav-link">Resume</a>
-    <a href="#" onclick="toggleDropdown()">Close</a>
   </div>
 </div>
+<!-- main part ends -->
 
 <footer>
-  <p id="footerPar">&copy; Sohrab Rezaei</p>
+  <p>© Sohrab Rezaei</p>
 </footer>
 
 <script
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
   crossorigin="anonymous"
 ></script>
 <script>
+// Function to toggle the sidebar
 function toggleSidebar() {
-  var sidebar = document.querySelector(".sidebar");
-  var mainContent = document.querySelector(".main-content");
-  var footer = document.querySelector("footer");
+    var sidebar = document.querySelector(".sidebar");
+    var mainContent = document.querySelector(".main-content");
+    var footer = document.querySelector("footer");
+    var navbarToggler = document.querySelector(".navbar-toggler"); // Get the Bootstrap navbar toggler
 
-  sidebar.classList.toggle("show");
+    sidebar.classList.toggle("show");
 
-  if (sidebar.classList.contains("show")) {
-    mainContent.style.marginLeft = "270px"; // Push main content aside when sidebar is open
-    footer.style.width = "calc(100% - 250px)"; // Adjust footer width to take full width when sidebar is open
-  } else {
-    mainContent.style.marginLeft = "0"; // Reset content position when sidebar is closed
-    footer.style.width = "100%"; // Reset footer width to 100% when sidebar is closed
-  }
-}
-
-
-function toggleDropdown() {
-  var dropdown = document.getElementById('dropdown');
-  var windowWidth = window.innerWidth;
-  if (windowWidth <= 1000) { // Only activate dropdown for small screens
-    if (dropdown.style.display === 'block') {
-      dropdown.style.display = 'none';
+    if (sidebar.classList.contains("show")) {
+        // Push main content and footer when sidebar is open
+        mainContent.style.marginLeft = "250px";
+        footer.style.marginLeft = "250px";
+        footer.style.width = "calc(100% - 250px)";
     } else {
-      dropdown.style.display = 'block';
+        // Reset content and footer position when sidebar is closed
+        mainContent.style.marginLeft = "0";
+        footer.style.marginLeft = "0";
+        footer.style.width = "100%";
     }
-  }
 }
 
+// Event listener for clicks outside the sidebar to close it
 document.addEventListener('click', function(event) {
-  var sidebar = document.querySelector(".sidebar"); 
-  var isClickInsideSidebar = sidebar.contains(event.target); 
-  var dropdown = document.getElementById('dropdown'); 
-  var isClickInsideDropdown = dropdown.contains(event.target); 
-  var isClickInsideMenuButton = document.getElementById('nav-menu').contains(event.target); 
-  var isClickInsideToggleButton = event.target.closest('.navbar-toggler') !== null; // Check if the click was on the navbar-toggler button
-  var mainContent = document.querySelector(".main-content");
-  var footer = document.querySelector("footer");
+    var sidebar = document.querySelector(".sidebar");
+    var isClickInsideSidebar = sidebar.contains(event.target);
+    var navbarToggler = document.querySelector(".navbar-toggler"); // Get the Bootstrap navbar toggler
+    var isClickOnNavbarToggler = navbarToggler && navbarToggler.contains(event.target);
 
-  if (!isClickInsideDropdown && !isClickInsideMenuButton && (dropdown.style.display === 'block')) {
-    toggleDropdown();
-  }
+    // If sidebar is open and click is outside sidebar AND not on the navbar toggler, close sidebar
+    if (sidebar.classList.contains("show") && !isClickInsideSidebar && !isClickOnNavbarToggler) {
+        toggleSidebar(); // Call toggleSidebar to close it and reset main content/footer
+    }
+}, true); // Use capture phase to ensure this runs before other click handlers
 
-  if (!isClickInsideSidebar && !isClickInsideToggleButton && sidebar.classList.contains("show")) { 
-    sidebar.classList.remove("show"); 
-    mainContent.style.marginLeft = "0"; // Reset content position when sidebar is closed
-    footer.style.width = "100%"; // Reset footer width to 100% when sidebar is closed
-  }
-}, true);
+// Add an event listener to the Bootstrap navbar toggler to also toggle the sidebar
+// This is to link the sidebar toggle with the Bootstrap's main nav toggle icon
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarToggler = document.querySelector(".navbar-toggler");
+    if (navbarToggler) {
+        navbarToggler.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent this click from propagating to the document listener
+            toggleSidebar();
+        });
+    }
 
+    // Adjust main content and footer when window resizes to ensure responsiveness
+    window.addEventListener('resize', function() {
+        var sidebar = document.querySelector(".sidebar");
+        var mainContent = document.querySelector(".main-content");
+        var footer = document.querySelector("footer");
+
+        if (window.innerWidth > 992 && sidebar.classList.contains("show")) { // Assuming 992px is desktop breakpoint
+            // If on desktop and sidebar is open, keep it open and adjust layout
+            mainContent.style.marginLeft = "250px";
+            footer.style.marginLeft = "250px";
+            footer.style.width = "calc(100% - 250px)";
+        } else if (window.innerWidth <= 992 && sidebar.classList.contains("show")) {
+             // On smaller screens, if sidebar is open, adjust content for sidebar
+            mainContent.style.marginLeft = "250px";
+            footer.style.marginLeft = "250px";
+            footer.style.width = "calc(100% - 250px)";
+        } else {
+            // If sidebar is closed or on small screen and closed
+            mainContent.style.marginLeft = "0";
+            footer.style.marginLeft = "0";
+            footer.style.width = "100%";
+        }
+    });
+});
 </script>
 </body>
 </html>
