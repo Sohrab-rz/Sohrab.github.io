@@ -88,31 +88,40 @@
       <!-- Bio Section -->
       <section class="section-block mb-4" style="font-family: 'Inter', sans-serif;">
         <h2 style="font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem; color: #222;">About</h2>
-        
-        <p style="margin-bottom: 0.8rem;">
-          Sohrab is a researcher specializing in the <strong>control of complex dynamical systems</strong>, with expertise in <strong>data-driven and AI methods</strong> for system analysis and control. He develops strategies to enhance the <strong>efficiency, resilience, and real-time performance</strong> of high-dimensional systems.
-        </p>
       
-        <p style="margin-bottom: 0.8rem;">
-          His work includes <strong>non-parametric control (NPC) methods</strong>, analysis of <strong>structural properties in multivariable systems</strong>, and research on <strong>data-driven control allocation</strong> for over-actuated systems.
-        </p>
+        <div style="background: #f9fafb; border-radius: 14px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); transition: all 0.25s ease; display: flex; flex-direction: column; gap: 12px;">
+          
+          <p style="margin:0;">
+            Sohrab is a researcher specializing in the <strong>control of complex dynamical systems</strong>, with expertise in <strong>data-driven and AI methods</strong> for system analysis and control. He develops strategies to enhance the <strong>efficiency, resilience, and real-time performance</strong> of high-dimensional systems.
+          </p>
       
-        <p>
-          He is particularly interested in <strong>data-driven approaches</strong> that bridge theory and practice, aiming to advance next-generation methodologies for <strong>modeling and control of complex systems</strong>.
-        </p>
+          <p style="margin:0;">
+            His work includes <strong>non-parametric control (NPC) methods</strong>, analysis of <strong>structural properties in multivariable systems</strong>, and research on <strong>data-driven control allocation</strong> for over-actuated systems.
+          </p>
+      
+          <p style="margin:0;">
+            He is particularly interested in <strong>data-driven approaches</strong> that bridge theory and practice, aiming to advance next-generation methodologies for <strong>modeling and control of complex systems</strong>.
+          </p>
+      
+        </div>
       </section>
       
       <style>
-        /* Hover effect on bold terms */
-        section.section-block p:hover strong {
-          color: #0a66c2;
+        section.section-block div {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+      
+        section.section-block div:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+        }
+      
+        section.section-block p strong {
           transition: color 0.3s ease;
         }
       
-        /* Optional card-style hover effect if wrapped in divs */
-        section.section-block:hover div {
-          transform: translateY(-3px);
-          box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+        section.section-block p:hover strong {
+          color: #0a66c2;
         }
       </style>
       <!-- Research Interests Section -->
