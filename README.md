@@ -1,2 +1,2 @@
 ## Personal website
-Visit www.sohrabr.com
+Visit https://sohrab-rz.github.io
